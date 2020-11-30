@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "es6",            // default is es5
+      "module": "commonjs",       // CommonJs style module in output
+      "outDir": "./dist",         // change the output directory
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": false,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,  // to import json database
+      "sourceMap": true
+    },
+    "include": [
+      "src/**/*"                  // which kind of files to compile
+    ],
+    "exclude": [
+      "node_modules",             // which files or directories to ignore
+      "**/*.test.ts"
+    ]
+ }

@@ -1,0 +1,13 @@
+body {
+  margin: 10px;
+}
+.autocomplete-ux-wrap .subject-text-input {
+  max-width: 300px;
+}
+.autocomplete-ux-wrap .dropdown .dropdown-toggle {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  padding: 0;
+  border: none;
+}
