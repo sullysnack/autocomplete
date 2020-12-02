@@ -1,16 +1,15 @@
-const protocol = process.env.SVC_PROTOCOL || 'http';
-const hostname = process.env.SVC_HOSTNAME || 'autocomplete-svc';
-const port = process.env.SVC_PORT || '9000';
+const protocol = process.env.REACT_APP_SVC_PROTOCOL || 'http';
+const port = process.env.REACT_APP_SVC_PORT || '9000';
 
 const prod = {
   url: {
-    BASE_API_URL: protocol + '://' + hostname + ':' + port
+    BASE_API_URL: protocol + '://' + (process.env.REACT_APP_SVC_HOSTNAME || 'autocomplete-svc') + ':' + port
   }
 };
 
 const dev = {
   url: {
-    BASE_API_URL: protocol + '://' + 'localhost' + ':' + port
+    BASE_API_URL: protocol + '://' + (process.env.REACT_APP_SVC_HOSTNAME || 'localhost') + ':' + port
   }
 };
 
